@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "esbenp.prettier-vscode",
+    "naumovs.color-highlight",
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments"
+  ],
+  "unwantedRecommendations": []
+}
