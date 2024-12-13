@@ -3,13 +3,15 @@
 
 ## 事前準備
 
-1. nodeがインストールされているかを確認する。ない場合はhttps://prog-8.com/docs/nodejs-env-win を参考に手順を実施
+1. 本リポジトリを各自のPC（ロカール環境）にクローンする（[参考](https://zenn.dev/gachigachi/articles/329952348817d7)）
+
+2. nodeがインストールされているかを確認する。ない場合は[こちら](https://prog-8.com/docs/nodejs-env-win)を参考に手順を実施
 ```bash
 # nodeのバージョンを確認
 node -v
 ```
 
-2. npmがインストールされているかを確認する。
+3. npmがインストールされているかを確認する。
 ```bash
 # npmのバージョンを確認
 npm -v
