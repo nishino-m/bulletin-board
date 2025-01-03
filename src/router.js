@@ -5,8 +5,6 @@ import Login from './components/Login.vue';
 
 const routes = [
   { path: '/', component: Login },
-  //{ path: '/posts', component: Posts },
- // { path: '/change-password', component: ChangePassword },
 ];
 
 const router = createRouter({
