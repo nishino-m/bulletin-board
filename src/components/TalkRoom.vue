@@ -2,7 +2,6 @@
     <div class="room-details">
       <h1>{{ roomname }} のトークルーム</h1>
       
-      <!-- トーク履歴の表示 -->
       <div v-if="messages.length > 0">
         <ul>
           <li v-for="(message, index) in messages" :key="index">
@@ -11,12 +10,10 @@
         </ul>
       </div>
   
-      <!-- トーク履歴がない場合 -->
       <div v-else>
         <p>この部屋にはまだメッセージがありません。</p>
       </div>
       
-      <!-- メッセージ送信フォーム -->
       <div>
         <input v-model="newMessage" type="text" placeholder="メッセージを入力" />
         <button @click="sendMessage">送信</button>
@@ -28,7 +25,7 @@ export default {
     props: ['roomname'],
     data() {
         return {
-            newMessage: '', // 新しいメッセージの入力値
+            newMessage: '', 
             messages: []
     };
   },
@@ -38,10 +35,10 @@ export default {
   methods: {
     sendMessage() {
       if (this.newMessage.trim() === '') {
-        return; // 空メッセージを送信しない
+        return; 
       }
       const newMessage = {
-        user: 'User1', // 現在のユーザー名をここに設定（仮）
+        user: 'User1',
         text: this.newMessage
       };
     },
