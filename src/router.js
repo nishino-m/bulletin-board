@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Login from './components/Login.vue';
-import Resetpassword from './components/Resetpassword.vue';
-import Categorychoice from './components/Categorychoice.vue';
+import ResetPassword from './components/ResetPassword.vue';
+import CategoryChoice from './components/CategoryChoice.vue';
+import RoomChoice from './components/RoomChoice.vue';
+import TalkRoom from './components/TalkRoom.vue';
 
 
 const routes = [
@@ -11,12 +13,22 @@ const routes = [
   },
   {
     path: '/reset-password',
-    component: Resetpassword
+    component: ResetPassword
   },
   {
     path: '/category-choice',
-    component: Categorychoice
+    component: CategoryChoice
   },
+  {
+    path: '/room-choice/:category',
+    component: RoomChoice,
+    props: true
+  },
+  {
+    path: '/talk-room/:roomname',
+    component: TalkRoom,
+    props: true
+  }
 ]
 
 const router = createRouter({
